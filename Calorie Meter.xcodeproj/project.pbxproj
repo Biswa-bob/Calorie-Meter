@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		343FE4282C2F0ECE00AC7A92 /* WeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343FE4272C2F0ECE00AC7A92 /* WeightView.swift */; };
+		343FE42A2C2F13DE00AC7A92 /* AgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343FE4292C2F13DE00AC7A92 /* AgeView.swift */; };
+		343FE42C2C2F160E00AC7A92 /* RecommendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343FE42B2C2F160E00AC7A92 /* RecommendView.swift */; };
+		343FE42E2C2F1FB600AC7A92 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343FE42D2C2F1FB600AC7A92 /* RegisterView.swift */; };
+		34ADDC882C2E57DC006A9A0A /* ActiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ADDC872C2E57DC006A9A0A /* ActiveView.swift */; };
+		34ADDC8A2C2E602F006A9A0A /* HeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ADDC892C2E602F006A9A0A /* HeightView.swift */; };
+		34B641532C2D029F0070FF00 /* GoalViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B641522C2D029F0070FF00 /* GoalViewUI.swift */; };
+		34C6C4D32C2DD09C00CBCB13 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C6C4D22C2DD09C00CBCB13 /* CardView.swift */; };
+		34C6C4D52C2DD42700CBCB13 /* GenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C6C4D42C2DD42700CBCB13 /* GenderView.swift */; };
+		34DBEF802C2C718B007747C4 /* LoginViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DBEF7F2C2C718B007747C4 /* LoginViewUI.swift */; };
+		34DBEF862C2C7CC3007747C4 /* ForgotPasswordViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DBEF852C2C7CC3007747C4 /* ForgotPasswordViewUI.swift */; };
 		34DF09682C2BAD78009C6144 /* Calorie_MeterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF09672C2BAD78009C6144 /* Calorie_MeterApp.swift */; };
 		34DF096A2C2BAD78009C6144 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF09692C2BAD78009C6144 /* ContentView.swift */; };
 		34DF096C2C2BAD79009C6144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34DF096B2C2BAD79009C6144 /* Assets.xcassets */; };
@@ -14,6 +25,8 @@
 		34DF09792C2BAD79009C6144 /* Calorie_MeterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF09782C2BAD79009C6144 /* Calorie_MeterTests.swift */; };
 		34DF09832C2BAD79009C6144 /* Calorie_MeterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF09822C2BAD79009C6144 /* Calorie_MeterUITests.swift */; };
 		34DF09852C2BAD79009C6144 /* Calorie_MeterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF09842C2BAD79009C6144 /* Calorie_MeterUITestsLaunchTests.swift */; };
+		34DF09962C2BB24E009C6144 /* PrimaryButtonUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF09952C2BB24E009C6144 /* PrimaryButtonUI.swift */; };
+		34E86B122C2FCCEB0009645D /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E86B112C2FCCEB0009645D /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +47,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		343FE4272C2F0ECE00AC7A92 /* WeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightView.swift; sourceTree = "<group>"; };
+		343FE4292C2F13DE00AC7A92 /* AgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeView.swift; sourceTree = "<group>"; };
+		343FE42B2C2F160E00AC7A92 /* RecommendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendView.swift; sourceTree = "<group>"; };
+		343FE42D2C2F1FB600AC7A92 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		34ADDC872C2E57DC006A9A0A /* ActiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveView.swift; sourceTree = "<group>"; };
+		34ADDC892C2E602F006A9A0A /* HeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightView.swift; sourceTree = "<group>"; };
+		34B641522C2D029F0070FF00 /* GoalViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewUI.swift; sourceTree = "<group>"; };
+		34C6C4D22C2DD09C00CBCB13 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		34C6C4D42C2DD42700CBCB13 /* GenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderView.swift; sourceTree = "<group>"; };
+		34DBEF7F2C2C718B007747C4 /* LoginViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewUI.swift; sourceTree = "<group>"; };
+		34DBEF852C2C7CC3007747C4 /* ForgotPasswordViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewUI.swift; sourceTree = "<group>"; };
 		34DF09642C2BAD78009C6144 /* Calorie Meter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calorie Meter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34DF09672C2BAD78009C6144 /* Calorie_MeterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calorie_MeterApp.swift; sourceTree = "<group>"; };
 		34DF09692C2BAD78009C6144 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +68,8 @@
 		34DF097E2C2BAD79009C6144 /* Calorie MeterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Calorie MeterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34DF09822C2BAD79009C6144 /* Calorie_MeterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calorie_MeterUITests.swift; sourceTree = "<group>"; };
 		34DF09842C2BAD79009C6144 /* Calorie_MeterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calorie_MeterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		34DF09952C2BB24E009C6144 /* PrimaryButtonUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonUI.swift; sourceTree = "<group>"; };
+		34E86B112C2FCCEB0009645D /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeView.swift; path = "Calorie Meter/WelcomeView.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +97,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34B641502C2D02860070FF00 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				34B641512C2D028E0070FF00 /* View */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		34B641512C2D028E0070FF00 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				34B641522C2D029F0070FF00 /* GoalViewUI.swift */,
+				34C6C4D22C2DD09C00CBCB13 /* CardView.swift */,
+				34C6C4D42C2DD42700CBCB13 /* GenderView.swift */,
+				34ADDC872C2E57DC006A9A0A /* ActiveView.swift */,
+				34ADDC892C2E602F006A9A0A /* HeightView.swift */,
+				343FE4272C2F0ECE00AC7A92 /* WeightView.swift */,
+				343FE4292C2F13DE00AC7A92 /* AgeView.swift */,
+				343FE42B2C2F160E00AC7A92 /* RecommendView.swift */,
+				343FE42D2C2F1FB600AC7A92 /* RegisterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		34DBEF7B2C2C715C007747C4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				34DBEF7E2C2C7173007747C4 /* View */,
+				34DBEF7D2C2C716A007747C4 /* ViewModel */,
+				34DBEF7C2C2C7165007747C4 /* Model */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		34DBEF7C2C2C7165007747C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		34DBEF7D2C2C716A007747C4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		34DBEF7E2C2C7173007747C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				34DBEF7F2C2C718B007747C4 /* LoginViewUI.swift */,
+				34DBEF852C2C7CC3007747C4 /* ForgotPasswordViewUI.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		34DF095B2C2BAD78009C6144 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +177,11 @@
 		34DF09662C2BAD78009C6144 /* Calorie Meter */ = {
 			isa = PBXGroup;
 			children = (
+				34E86B132C2FCF690009645D /* Home */,
+				34E86B0F2C2FCCBD0009645D /* Welcome */,
+				34B641502C2D02860070FF00 /* Registration */,
+				34DBEF7B2C2C715C007747C4 /* Login */,
+				34DF09912C2BB206009C6144 /* PrimaryButton */,
 				34DF09672C2BAD78009C6144 /* Calorie_MeterApp.swift */,
 				34DF09692C2BAD78009C6144 /* ContentView.swift */,
 				34DF096B2C2BAD79009C6144 /* Assets.xcassets */,
@@ -125,6 +213,69 @@
 				34DF09842C2BAD79009C6144 /* Calorie_MeterUITestsLaunchTests.swift */,
 			);
 			path = "Calorie MeterUITests";
+			sourceTree = "<group>";
+		};
+		34DF09912C2BB206009C6144 /* PrimaryButton */ = {
+			isa = PBXGroup;
+			children = (
+				34DF09942C2BB231009C6144 /* Model */,
+				34DF09932C2BB22B009C6144 /* ViewModel */,
+				34DF09922C2BB218009C6144 /* View */,
+			);
+			path = PrimaryButton;
+			sourceTree = "<group>";
+		};
+		34DF09922C2BB218009C6144 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				34DF09952C2BB24E009C6144 /* PrimaryButtonUI.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		34DF09932C2BB22B009C6144 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		34DF09942C2BB231009C6144 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		34E86B0F2C2FCCBD0009645D /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				34E86B102C2FCCC40009645D /* View */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		34E86B102C2FCCC40009645D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				34E86B112C2FCCEB0009645D /* WelcomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		34E86B132C2FCF690009645D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				34E86B142C2FCF750009645D /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		34E86B142C2FCF750009645D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +408,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34C6C4D52C2DD42700CBCB13 /* GenderView.swift in Sources */,
+				34DBEF862C2C7CC3007747C4 /* ForgotPasswordViewUI.swift in Sources */,
+				34ADDC882C2E57DC006A9A0A /* ActiveView.swift in Sources */,
+				34B641532C2D029F0070FF00 /* GoalViewUI.swift in Sources */,
 				34DF096A2C2BAD78009C6144 /* ContentView.swift in Sources */,
 				34DF09682C2BAD78009C6144 /* Calorie_MeterApp.swift in Sources */,
+				343FE42E2C2F1FB600AC7A92 /* RegisterView.swift in Sources */,
+				343FE4282C2F0ECE00AC7A92 /* WeightView.swift in Sources */,
+				34DBEF802C2C718B007747C4 /* LoginViewUI.swift in Sources */,
+				34C6C4D32C2DD09C00CBCB13 /* CardView.swift in Sources */,
+				34E86B122C2FCCEB0009645D /* WelcomeView.swift in Sources */,
+				34DF09962C2BB24E009C6144 /* PrimaryButtonUI.swift in Sources */,
+				343FE42A2C2F13DE00AC7A92 /* AgeView.swift in Sources */,
+				34ADDC8A2C2E602F006A9A0A /* HeightView.swift in Sources */,
+				343FE42C2C2F160E00AC7A92 /* RecommendView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
