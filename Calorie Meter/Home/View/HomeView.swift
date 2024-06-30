@@ -18,41 +18,13 @@ struct HomeView: View {
         TabView(selection: $activeTab){
             ReceipesView()
                 .tag(Tab.receipes)
-//                .toolbar(.hidden,for: .tabBar)
             DiaryView()
                 .tag(Tab.diary)
-//                .toolbar(.hidden,for: .tabBar)
             ReportsView()
                 .tag(Tab.reports)
               
         }
         CustomTabBar()
-        //        TabView{
-        //           ReceipesView()
-        //                .tabItem {
-        //                    VStack{
-        //                        Image(systemName: "book")
-        //                        Text("Receipes")
-        //                    }
-        //                }
-        //            DiaryView()
-        //                .tabItem {
-        //                    VStack{
-        //                        Image(systemName: "clock")
-        //                        Text("Diary")
-        //                    }
-        //                }
-        //            ReportsView()
-        //                .tabItem {
-        //                    VStack{
-        //                        Image(systemName: "chart.line.uptrend.xyaxis")
-        //                        Text("Reports")
-        //                    }
-        //                    .foregroundColor(.red)
-        //                }
-        //        }
-        
-        
     }
     @ViewBuilder
     func CustomTabBar(_ tint:Color = Color("Primary"),_ inactiveTint: Color = Color("Primary"))-> some View{
