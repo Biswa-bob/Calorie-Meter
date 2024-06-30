@@ -11,11 +11,19 @@
 		343FE42A2C2F13DE00AC7A92 /* AgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343FE4292C2F13DE00AC7A92 /* AgeView.swift */; };
 		343FE42C2C2F160E00AC7A92 /* RecommendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343FE42B2C2F160E00AC7A92 /* RecommendView.swift */; };
 		343FE42E2C2F1FB600AC7A92 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343FE42D2C2F1FB600AC7A92 /* RegisterView.swift */; };
+		34A39A2A2C301F2500C908AD /* DiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A39A292C301F2500C908AD /* DiaryView.swift */; };
+		34A39A2D2C30613600C908AD /* Meals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A39A2C2C30613600C908AD /* Meals.swift */; };
+		34A39A352C30710400C908AD /* ReceipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A39A342C30710400C908AD /* ReceipesView.swift */; };
+		34A39A372C30711700C908AD /* ReportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A39A362C30711700C908AD /* ReportsView.swift */; };
 		34ADDC882C2E57DC006A9A0A /* ActiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ADDC872C2E57DC006A9A0A /* ActiveView.swift */; };
 		34ADDC8A2C2E602F006A9A0A /* HeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ADDC892C2E602F006A9A0A /* HeightView.swift */; };
+		34AFEC7A2C3105F100DCCA65 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AFEC792C3105F100DCCA65 /* Tab.swift */; };
+		34AFEC7C2C31135A00DCCA65 /* TabShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AFEC7B2C31135A00DCCA65 /* TabShape.swift */; };
+		34AFEC7E2C3115CD00DCCA65 /* TabPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AFEC7D2C3115CD00DCCA65 /* TabPosition.swift */; };
 		34B641532C2D029F0070FF00 /* GoalViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B641522C2D029F0070FF00 /* GoalViewUI.swift */; };
 		34C6C4D32C2DD09C00CBCB13 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C6C4D22C2DD09C00CBCB13 /* CardView.swift */; };
 		34C6C4D52C2DD42700CBCB13 /* GenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C6C4D42C2DD42700CBCB13 /* GenderView.swift */; };
+		34D8A4792C2FD3240033A563 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D8A4782C2FD3240033A563 /* HomeView.swift */; };
 		34DBEF802C2C718B007747C4 /* LoginViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DBEF7F2C2C718B007747C4 /* LoginViewUI.swift */; };
 		34DBEF862C2C7CC3007747C4 /* ForgotPasswordViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DBEF852C2C7CC3007747C4 /* ForgotPasswordViewUI.swift */; };
 		34DF09682C2BAD78009C6144 /* Calorie_MeterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF09672C2BAD78009C6144 /* Calorie_MeterApp.swift */; };
@@ -51,11 +59,19 @@
 		343FE4292C2F13DE00AC7A92 /* AgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeView.swift; sourceTree = "<group>"; };
 		343FE42B2C2F160E00AC7A92 /* RecommendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendView.swift; sourceTree = "<group>"; };
 		343FE42D2C2F1FB600AC7A92 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		34A39A292C301F2500C908AD /* DiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
+		34A39A2C2C30613600C908AD /* Meals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meals.swift; sourceTree = "<group>"; };
+		34A39A342C30710400C908AD /* ReceipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceipesView.swift; sourceTree = "<group>"; };
+		34A39A362C30711700C908AD /* ReportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsView.swift; sourceTree = "<group>"; };
 		34ADDC872C2E57DC006A9A0A /* ActiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveView.swift; sourceTree = "<group>"; };
 		34ADDC892C2E602F006A9A0A /* HeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightView.swift; sourceTree = "<group>"; };
+		34AFEC792C3105F100DCCA65 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		34AFEC7B2C31135A00DCCA65 /* TabShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabShape.swift; sourceTree = "<group>"; };
+		34AFEC7D2C3115CD00DCCA65 /* TabPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPosition.swift; sourceTree = "<group>"; };
 		34B641522C2D029F0070FF00 /* GoalViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewUI.swift; sourceTree = "<group>"; };
 		34C6C4D22C2DD09C00CBCB13 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		34C6C4D42C2DD42700CBCB13 /* GenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderView.swift; sourceTree = "<group>"; };
+		34D8A4782C2FD3240033A563 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		34DBEF7F2C2C718B007747C4 /* LoginViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewUI.swift; sourceTree = "<group>"; };
 		34DBEF852C2C7CC3007747C4 /* ForgotPasswordViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewUI.swift; sourceTree = "<group>"; };
 		34DF09642C2BAD78009C6144 /* Calorie Meter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calorie Meter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +113,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34A39A272C301F0D00C908AD /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				34A39A2B2C30612000C908AD /* Model */,
+				34A39A282C301F1800C908AD /* View */,
+			);
+			path = Diary;
+			sourceTree = "<group>";
+		};
+		34A39A282C301F1800C908AD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				34A39A292C301F2500C908AD /* DiaryView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		34A39A2B2C30612000C908AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				34A39A2C2C30613600C908AD /* Meals.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		34A39A2E2C3070D000C908AD /* Receipes */ = {
+			isa = PBXGroup;
+			children = (
+				34A39A312C3070E700C908AD /* View */,
+			);
+			path = Receipes;
+			sourceTree = "<group>";
+		};
+		34A39A2F2C3070D700C908AD /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				34A39A302C3070DE00C908AD /* View */,
+			);
+			path = Reports;
+			sourceTree = "<group>";
+		};
+		34A39A302C3070DE00C908AD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				34A39A362C30711700C908AD /* ReportsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		34A39A312C3070E700C908AD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				34A39A342C30710400C908AD /* ReceipesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		34AFEC782C3105DF00DCCA65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				34AFEC792C3105F100DCCA65 /* Tab.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		34B641502C2D02860070FF00 /* Registration */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +258,9 @@
 		34DF09662C2BAD78009C6144 /* Calorie Meter */ = {
 			isa = PBXGroup;
 			children = (
+				34A39A2F2C3070D700C908AD /* Reports */,
+				34A39A2E2C3070D000C908AD /* Receipes */,
+				34A39A272C301F0D00C908AD /* Diary */,
 				34E86B132C2FCF690009645D /* Home */,
 				34E86B0F2C2FCCBD0009645D /* Welcome */,
 				34B641502C2D02860070FF00 /* Registration */,
@@ -266,6 +350,7 @@
 		34E86B132C2FCF690009645D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				34AFEC782C3105DF00DCCA65 /* Model */,
 				34E86B142C2FCF750009645D /* View */,
 			);
 			path = Home;
@@ -274,6 +359,9 @@
 		34E86B142C2FCF750009645D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				34D8A4782C2FD3240033A563 /* HomeView.swift */,
+				34AFEC7B2C31135A00DCCA65 /* TabShape.swift */,
+				34AFEC7D2C3115CD00DCCA65 /* TabPosition.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -408,10 +496,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34AFEC7E2C3115CD00DCCA65 /* TabPosition.swift in Sources */,
+				34A39A2D2C30613600C908AD /* Meals.swift in Sources */,
+				34AFEC7C2C31135A00DCCA65 /* TabShape.swift in Sources */,
 				34C6C4D52C2DD42700CBCB13 /* GenderView.swift in Sources */,
 				34DBEF862C2C7CC3007747C4 /* ForgotPasswordViewUI.swift in Sources */,
 				34ADDC882C2E57DC006A9A0A /* ActiveView.swift in Sources */,
+				34A39A352C30710400C908AD /* ReceipesView.swift in Sources */,
 				34B641532C2D029F0070FF00 /* GoalViewUI.swift in Sources */,
+				34AFEC7A2C3105F100DCCA65 /* Tab.swift in Sources */,
+				34A39A372C30711700C908AD /* ReportsView.swift in Sources */,
 				34DF096A2C2BAD78009C6144 /* ContentView.swift in Sources */,
 				34DF09682C2BAD78009C6144 /* Calorie_MeterApp.swift in Sources */,
 				343FE42E2C2F1FB600AC7A92 /* RegisterView.swift in Sources */,
@@ -419,8 +513,10 @@
 				34DBEF802C2C718B007747C4 /* LoginViewUI.swift in Sources */,
 				34C6C4D32C2DD09C00CBCB13 /* CardView.swift in Sources */,
 				34E86B122C2FCCEB0009645D /* WelcomeView.swift in Sources */,
+				34A39A2A2C301F2500C908AD /* DiaryView.swift in Sources */,
 				34DF09962C2BB24E009C6144 /* PrimaryButtonUI.swift in Sources */,
 				343FE42A2C2F13DE00AC7A92 /* AgeView.swift in Sources */,
+				34D8A4792C2FD3240033A563 /* HomeView.swift in Sources */,
 				34ADDC8A2C2E602F006A9A0A /* HeightView.swift in Sources */,
 				343FE42C2C2F160E00AC7A92 /* RecommendView.swift in Sources */,
 			);
