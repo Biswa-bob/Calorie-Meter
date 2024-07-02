@@ -14,6 +14,8 @@
 		343FE42E2C2F1FB600AC7A92 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343FE42D2C2F1FB600AC7A92 /* RegisterView.swift */; };
 		348BEF122C3244EE006FD890 /* ReceipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348BEF112C3244EE006FD890 /* ReceipeDetailView.swift */; };
 		348BEF152C325007006FD890 /* Receipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348BEF142C325007006FD890 /* Receipe.swift */; };
+		34934BF32C32FFE300F9817B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34934BF22C32FFE300F9817B /* ProfileView.swift */; };
+		34934BF52C33028900F9817B /* ProfileSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34934BF42C33028900F9817B /* ProfileSettingsView.swift */; };
 		34A39A2A2C301F2500C908AD /* DiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A39A292C301F2500C908AD /* DiaryView.swift */; };
 		34A39A2D2C30613600C908AD /* Meals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A39A2C2C30613600C908AD /* Meals.swift */; };
 		34A39A352C30710400C908AD /* ReceipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A39A342C30710400C908AD /* ReceipesView.swift */; };
@@ -65,6 +67,8 @@
 		343FE42D2C2F1FB600AC7A92 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		348BEF112C3244EE006FD890 /* ReceipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceipeDetailView.swift; sourceTree = "<group>"; };
 		348BEF142C325007006FD890 /* Receipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receipe.swift; sourceTree = "<group>"; };
+		34934BF22C32FFE300F9817B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		34934BF42C33028900F9817B /* ProfileSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsView.swift; sourceTree = "<group>"; };
 		34A39A292C301F2500C908AD /* DiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
 		34A39A2C2C30613600C908AD /* Meals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meals.swift; sourceTree = "<group>"; };
 		34A39A342C30710400C908AD /* ReceipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceipesView.swift; sourceTree = "<group>"; };
@@ -133,6 +137,23 @@
 				348BEF142C325007006FD890 /* Receipe.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		34934BF02C32FFC500F9817B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				34934BF12C32FFD800F9817B /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		34934BF12C32FFD800F9817B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				34934BF22C32FFE300F9817B /* ProfileView.swift */,
+				34934BF42C33028900F9817B /* ProfileSettingsView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		34A39A272C301F0D00C908AD /* Diary */ = {
@@ -283,6 +304,7 @@
 		34DF09662C2BAD78009C6144 /* Calorie Meter */ = {
 			isa = PBXGroup;
 			children = (
+				34934BF02C32FFC500F9817B /* Profile */,
 				34A39A2F2C3070D700C908AD /* Reports */,
 				34A39A2E2C3070D000C908AD /* Receipes */,
 				34A39A272C301F0D00C908AD /* Diary */,
@@ -522,6 +544,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34AFEC7E2C3115CD00DCCA65 /* TabPosition.swift in Sources */,
+				34934BF32C32FFE300F9817B /* ProfileView.swift in Sources */,
 				34A39A2D2C30613600C908AD /* Meals.swift in Sources */,
 				34AFEC7C2C31135A00DCCA65 /* TabShape.swift in Sources */,
 				34C6C4D52C2DD42700CBCB13 /* GenderView.swift in Sources */,
@@ -533,6 +556,7 @@
 				34A39A372C30711700C908AD /* ReportsView.swift in Sources */,
 				34DF096A2C2BAD78009C6144 /* ContentView.swift in Sources */,
 				34DF09682C2BAD78009C6144 /* Calorie_MeterApp.swift in Sources */,
+				34934BF52C33028900F9817B /* ProfileSettingsView.swift in Sources */,
 				343FE42E2C2F1FB600AC7A92 /* RegisterView.swift in Sources */,
 				343FE4282C2F0ECE00AC7A92 /* WeightView.swift in Sources */,
 				34DBEF802C2C718B007747C4 /* LoginViewUI.swift in Sources */,
