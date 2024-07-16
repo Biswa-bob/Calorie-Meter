@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Receipe:Identifiable,Hashable{
+struct Receipe:Identifiable,Hashable,Codable{
     let id = UUID()
     let name:String
     let calorie:String

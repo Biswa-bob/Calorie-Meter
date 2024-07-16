@@ -30,7 +30,7 @@ struct ProfileSettingsView: View {
                 SettingsCard(name: "Lifestyle", value: "Active",isSheetOpen: $isLifeStyle)
             }
             Spacer()
-            PrimaryButtonUI(btnLable: "Done", onPressed: {})
+            PrimaryButtonUI(btnLable: "Done")
         }
     }
     
@@ -71,7 +71,14 @@ struct SettingsCard: View {
                         .foregroundColor(Color("Primary"))
                 })
                 .sheet(isPresented: $isSheetOpen) {
-                    Text("This app was brought to you by Hacking with \(name)")
+                    VStack{
+                        switch name{
+                            case "Goal":
+                                Text("hello \(name)")
+                            default:
+                                Text("Nothing to show")
+                        }
+                    }
                         .presentationDetents([.medium, .large])
                 }
             }

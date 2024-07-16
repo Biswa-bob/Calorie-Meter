@@ -12,8 +12,10 @@ struct HeightView: View {
     let centi = 1...99
     @State private var selectedMeter = 1
     @State private var selectedCenti = 1
+    @Environment(\.dismiss) private var dismiss
+    @State private var isWeightView:Bool = false
     var body: some View {
-        NavigationView{
+        NavigationStack{
             ZStack{
                 VStack{
                     Text("How tall are you?")
@@ -54,30 +56,27 @@ struct HeightView: View {
                     
                     Spacer()
                     HStack {
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Button(action: {
+                            dismiss()
+                        }, label: {
                             Text("Back")
                                 .padding(.leading)
                                 .font(.title3)
                                 .foregroundColor(Color("OnBackgroundVariant"))
                         })
                         Spacer()
-                        Button(action: {}, label: {
-                            Image(systemName: "chevron.right")
-                                .frame(width: 77, height: 70)
-                                .foregroundColor(Color.black)
-                                .padding(.vertical,2)
-                            
-                        })
-                        .background(Color("Primary"))
-                        .cornerRadius(38.5)
-                        .padding()
-                        .shadow(color: Color.black.opacity(0.3),
-                                radius: 3,
-                                x: 3,
-                                y: 3)
+                        NavigationLink{
+                            WeightView()
+                        } label:{
+                            FloatingNavButtonUI()
+                        }
                     }
                 }
             }
+            .navigationDestination(isPresented: $isWeightView){
+                WeightView()
+            }
+            .navigationBarBackButtonHidden(true)
         }
     }
 }

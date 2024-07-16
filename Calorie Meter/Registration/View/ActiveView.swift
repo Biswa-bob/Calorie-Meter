@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ActiveView: View {
     @State private var selectedId: String? = nil
+    @State private var isHeightView:Bool = false
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     let activity:[String:String] = [
         "Sedentery":"sedentery",
         "Low Active": "low",
@@ -16,7 +18,8 @@ struct ActiveView: View {
         "Very Active" : "very_active",
     ]
     var body: some View {
-        NavigationView{
+      
+        NavigationStack{
             ZStack{
                 VStack{
                     Text("How active are you?")
@@ -45,30 +48,25 @@ struct ActiveView: View {
                     }
                     Spacer()
                     HStack {
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Button(action: {
+                            self.presentationMode.wrappedValue.dismiss()
+                        }, label: {
                             Text("Back")
                                 .padding(.leading)
                                 .font(.title3)
                                 .foregroundColor(Color("OnBackgroundVariant"))
                         })
                         Spacer()
-                        Button(action: {}, label: {
-                            Image(systemName: "chevron.right")
-                                .frame(width: 77, height: 70)
-                                .foregroundColor(Color.black)
-                                .padding(.vertical,2)
-                               
-                        })
-                        .background(Color("Primary"))
-                        .cornerRadius(38.5)
-                        .padding()
-                        .shadow(color: Color.black.opacity(0.3),
-                                radius: 3,
-                                x: 3,
-                                y: 3)
+                        NavigationLink{
+                            HeightView()
+                        } label:{
+                            FloatingNavButtonUI()
+                        }
                     }
                 }
             }
+          
+            .navigationBarBackButtonHidden(true)
         }
     }
 }

@@ -11,6 +11,7 @@ struct RegisterView: View {
     @State private var name = ""
     @State private var email = ""
     @State private var password = ""
+    @State private var isRegister = false
     var body: some View {
         NavigationView{
                 VStack(spacing: 20){

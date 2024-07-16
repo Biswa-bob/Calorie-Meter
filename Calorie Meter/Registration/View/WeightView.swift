@@ -10,9 +10,11 @@ import SwiftUI
 struct WeightView: View {
     @State private var weight:String = "10"
     @State private var selectedWeight = "kg"
+    @Environment(\.dismiss) private var dismiss
+    @State private var isAgeView:Bool = false
     let units = ["kg","lb"]
     var body: some View {
-        NavigationView{
+        NavigationStack{
             ZStack{
                 VStack{
                     Text("What’s your weight?")
@@ -56,30 +58,27 @@ struct WeightView: View {
                     
                     Spacer()
                     HStack {
-                        Button(action: {}, label: {
+                        Button(action: {
+                            dismiss()
+                        }, label: {
                             Text("Back")
                                 .padding(.leading)
                                 .font(.title3)
                                 .foregroundColor(Color("OnBackgroundVariant"))
                         })
                         Spacer()
-                        Button(action: {}, label: {
-                            Image(systemName: "chevron.right")
-                                .frame(width: 77, height: 70)
-                                .foregroundColor(Color.black)
-                                .padding(.vertical,2)
-                            
-                        })
-                        .background(Color("Primary"))
-                        .cornerRadius(38.5)
-                        .padding()
-                        .shadow(color: Color.black.opacity(0.3),
-                                radius: 3,
-                                x: 3,
-                                y: 3)
+                        NavigationLink{
+                            AgeView()
+                        } label:{
+                            FloatingNavButtonUI()
+                        }
                     }
                 }
             }
+            .navigationDestination(isPresented: $isAgeView){
+                AgeView()
+            }
+            .navigationBarBackButtonHidden(true)
         }
     }
 }

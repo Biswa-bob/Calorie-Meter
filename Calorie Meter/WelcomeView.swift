@@ -26,12 +26,14 @@ struct WelcomeView: View {
                     .foregroundColor(Color("OnBackgroundVariant"))
                 Spacer()
                 VStack(spacing: 25) {
-                    PrimaryButtonUI(btnLable: "Start",onPressed: {
-                        isStart.toggle()
-                    })
-                        .navigationDestination(isPresented: $isStart){
-                            GoalViewUI()
-                        }
+                    NavigationLink{
+                        GoalViewUI()
+                    }label:{
+                        PrimaryButtonUI(btnLable: "Start")
+                    }
+//                        .navigationDestination(isPresented: $isStart){
+//                            GoalViewUI()
+//                        }
                     HStack{
                         Text("Already have an account?")
                         Button(action:{
@@ -88,9 +90,10 @@ struct WelcomeView: View {
                 }
                 
             }
-            .navigationDestination(isPresented: $isLogin){
-                LoginViewUI()
-            }
+            
+        }
+        .navigationDestination(isPresented: $isLogin){
+            LoginViewUI()
         }
     }
 }

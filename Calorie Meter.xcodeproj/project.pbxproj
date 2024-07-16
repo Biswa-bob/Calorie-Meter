@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		342A43C42C45802800766451 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342A43C32C45802800766451 /* SettingsView.swift */; };
+		342A43C62C45812700766451 /* ChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342A43C52C45812700766451 /* ChipView.swift */; };
+		34361A0A2C403A16009A0230 /* ReceipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34361A092C403A16009A0230 /* ReceipeViewModel.swift */; };
 		343CA16C2C31B4BE00716048 /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343CA16B2C31B4BE00716048 /* Weight.swift */; };
 		343FE4282C2F0ECE00AC7A92 /* WeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343FE4272C2F0ECE00AC7A92 /* WeightView.swift */; };
 		343FE42A2C2F13DE00AC7A92 /* AgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343FE4292C2F13DE00AC7A92 /* AgeView.swift */; };
 		343FE42C2C2F160E00AC7A92 /* RecommendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343FE42B2C2F160E00AC7A92 /* RecommendView.swift */; };
 		343FE42E2C2F1FB600AC7A92 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343FE42D2C2F1FB600AC7A92 /* RegisterView.swift */; };
+		34623DEB2C40BA03003AFF4B /* ReceipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34623DEA2C40BA03003AFF4B /* ReceipeModel.swift */; };
 		348BEF122C3244EE006FD890 /* ReceipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348BEF112C3244EE006FD890 /* ReceipeDetailView.swift */; };
 		348BEF152C325007006FD890 /* Receipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348BEF142C325007006FD890 /* Receipe.swift */; };
 		34934BF32C32FFE300F9817B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34934BF22C32FFE300F9817B /* ProfileView.swift */; };
@@ -20,6 +24,7 @@
 		34A39A2D2C30613600C908AD /* Meals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A39A2C2C30613600C908AD /* Meals.swift */; };
 		34A39A352C30710400C908AD /* ReceipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A39A342C30710400C908AD /* ReceipesView.swift */; };
 		34A39A372C30711700C908AD /* ReportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A39A362C30711700C908AD /* ReportsView.swift */; };
+		34A653C32C3636F700D11B26 /* RegisterSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A653C22C3636F700D11B26 /* RegisterSuccessView.swift */; };
 		34ADDC882C2E57DC006A9A0A /* ActiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ADDC872C2E57DC006A9A0A /* ActiveView.swift */; };
 		34ADDC8A2C2E602F006A9A0A /* HeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ADDC892C2E602F006A9A0A /* HeightView.swift */; };
 		34AFEC7A2C3105F100DCCA65 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AFEC792C3105F100DCCA65 /* Tab.swift */; };
@@ -28,6 +33,7 @@
 		34B641532C2D029F0070FF00 /* GoalViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B641522C2D029F0070FF00 /* GoalViewUI.swift */; };
 		34C6C4D32C2DD09C00CBCB13 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C6C4D22C2DD09C00CBCB13 /* CardView.swift */; };
 		34C6C4D52C2DD42700CBCB13 /* GenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C6C4D42C2DD42700CBCB13 /* GenderView.swift */; };
+		34D6F98C2C460E490005A047 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D6F98B2C460E490005A047 /* PrimaryButton.swift */; };
 		34D8A4792C2FD3240033A563 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D8A4782C2FD3240033A563 /* HomeView.swift */; };
 		34DBEF802C2C718B007747C4 /* LoginViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DBEF7F2C2C718B007747C4 /* LoginViewUI.swift */; };
 		34DBEF862C2C7CC3007747C4 /* ForgotPasswordViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DBEF852C2C7CC3007747C4 /* ForgotPasswordViewUI.swift */; };
@@ -35,11 +41,9 @@
 		34DF096A2C2BAD78009C6144 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF09692C2BAD78009C6144 /* ContentView.swift */; };
 		34DF096C2C2BAD79009C6144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34DF096B2C2BAD79009C6144 /* Assets.xcassets */; };
 		34DF096F2C2BAD79009C6144 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34DF096E2C2BAD79009C6144 /* Preview Assets.xcassets */; };
-		34DF09792C2BAD79009C6144 /* Calorie_MeterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF09782C2BAD79009C6144 /* Calorie_MeterTests.swift */; };
-		34DF09832C2BAD79009C6144 /* Calorie_MeterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF09822C2BAD79009C6144 /* Calorie_MeterUITests.swift */; };
-		34DF09852C2BAD79009C6144 /* Calorie_MeterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF09842C2BAD79009C6144 /* Calorie_MeterUITestsLaunchTests.swift */; };
 		34DF09962C2BB24E009C6144 /* PrimaryButtonUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF09952C2BB24E009C6144 /* PrimaryButtonUI.swift */; };
 		34E86B122C2FCCEB0009645D /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E86B112C2FCCEB0009645D /* WelcomeView.swift */; };
+		34FD08782C37ADE2004F02DE /* FloatingNavButtonUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FD08772C37ADE2004F02DE /* FloatingNavButtonUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,11 +64,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		342A43C32C45802800766451 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		342A43C52C45812700766451 /* ChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipView.swift; sourceTree = "<group>"; };
+		34361A092C403A16009A0230 /* ReceipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceipeViewModel.swift; sourceTree = "<group>"; };
 		343CA16B2C31B4BE00716048 /* Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
 		343FE4272C2F0ECE00AC7A92 /* WeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightView.swift; sourceTree = "<group>"; };
 		343FE4292C2F13DE00AC7A92 /* AgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeView.swift; sourceTree = "<group>"; };
 		343FE42B2C2F160E00AC7A92 /* RecommendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendView.swift; sourceTree = "<group>"; };
 		343FE42D2C2F1FB600AC7A92 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		34623DEA2C40BA03003AFF4B /* ReceipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceipeModel.swift; sourceTree = "<group>"; };
 		348BEF112C3244EE006FD890 /* ReceipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceipeDetailView.swift; sourceTree = "<group>"; };
 		348BEF142C325007006FD890 /* Receipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receipe.swift; sourceTree = "<group>"; };
 		34934BF22C32FFE300F9817B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -73,6 +81,7 @@
 		34A39A2C2C30613600C908AD /* Meals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meals.swift; sourceTree = "<group>"; };
 		34A39A342C30710400C908AD /* ReceipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceipesView.swift; sourceTree = "<group>"; };
 		34A39A362C30711700C908AD /* ReportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsView.swift; sourceTree = "<group>"; };
+		34A653C22C3636F700D11B26 /* RegisterSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSuccessView.swift; sourceTree = "<group>"; };
 		34ADDC872C2E57DC006A9A0A /* ActiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveView.swift; sourceTree = "<group>"; };
 		34ADDC892C2E602F006A9A0A /* HeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightView.swift; sourceTree = "<group>"; };
 		34AFEC792C3105F100DCCA65 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
@@ -81,6 +90,7 @@
 		34B641522C2D029F0070FF00 /* GoalViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewUI.swift; sourceTree = "<group>"; };
 		34C6C4D22C2DD09C00CBCB13 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		34C6C4D42C2DD42700CBCB13 /* GenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderView.swift; sourceTree = "<group>"; };
+		34D6F98B2C460E490005A047 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		34D8A4782C2FD3240033A563 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		34DBEF7F2C2C718B007747C4 /* LoginViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewUI.swift; sourceTree = "<group>"; };
 		34DBEF852C2C7CC3007747C4 /* ForgotPasswordViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewUI.swift; sourceTree = "<group>"; };
@@ -90,12 +100,10 @@
 		34DF096B2C2BAD79009C6144 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34DF096E2C2BAD79009C6144 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		34DF09742C2BAD79009C6144 /* Calorie MeterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Calorie MeterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		34DF09782C2BAD79009C6144 /* Calorie_MeterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calorie_MeterTests.swift; sourceTree = "<group>"; };
 		34DF097E2C2BAD79009C6144 /* Calorie MeterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Calorie MeterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		34DF09822C2BAD79009C6144 /* Calorie_MeterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calorie_MeterUITests.swift; sourceTree = "<group>"; };
-		34DF09842C2BAD79009C6144 /* Calorie_MeterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calorie_MeterUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		34DF09952C2BB24E009C6144 /* PrimaryButtonUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonUI.swift; sourceTree = "<group>"; };
 		34E86B112C2FCCEB0009645D /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeView.swift; path = "Calorie Meter/WelcomeView.swift"; sourceTree = SOURCE_ROOT; };
+		34FD08772C37ADE2004F02DE /* FloatingNavButtonUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingNavButtonUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +131,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		342A43C12C45800D00766451 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				342A43C22C45801600766451 /* View */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		342A43C22C45801600766451 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				342A43C32C45802800766451 /* SettingsView.swift */,
+				342A43C52C45812700766451 /* ChipView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		34361A082C4039E2009A0230 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				34361A092C403A16009A0230 /* ReceipeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		343CA16A2C31B4AA00716048 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				348BEF142C325007006FD890 /* Receipe.swift */,
+				34623DEA2C40BA03003AFF4B /* ReceipeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,6 +218,7 @@
 		34A39A2E2C3070D000C908AD /* Receipes */ = {
 			isa = PBXGroup;
 			children = (
+				34361A082C4039E2009A0230 /* ViewModel */,
 				348BEF132C324FFB006FD890 /* Model */,
 				34A39A312C3070E700C908AD /* View */,
 			);
@@ -244,6 +279,7 @@
 				343FE4292C2F13DE00AC7A92 /* AgeView.swift */,
 				343FE42B2C2F160E00AC7A92 /* RecommendView.swift */,
 				343FE42D2C2F1FB600AC7A92 /* RegisterView.swift */,
+				34A653C22C3636F700D11B26 /* RegisterSuccessView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -285,8 +321,6 @@
 			isa = PBXGroup;
 			children = (
 				34DF09662C2BAD78009C6144 /* Calorie Meter */,
-				34DF09772C2BAD79009C6144 /* Calorie MeterTests */,
-				34DF09812C2BAD79009C6144 /* Calorie MeterUITests */,
 				34DF09652C2BAD78009C6144 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -304,6 +338,7 @@
 		34DF09662C2BAD78009C6144 /* Calorie Meter */ = {
 			isa = PBXGroup;
 			children = (
+				342A43C12C45800D00766451 /* Settings */,
 				34934BF02C32FFC500F9817B /* Profile */,
 				34A39A2F2C3070D700C908AD /* Reports */,
 				34A39A2E2C3070D000C908AD /* Receipes */,
@@ -329,23 +364,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		34DF09772C2BAD79009C6144 /* Calorie MeterTests */ = {
-			isa = PBXGroup;
-			children = (
-				34DF09782C2BAD79009C6144 /* Calorie_MeterTests.swift */,
-			);
-			path = "Calorie MeterTests";
-			sourceTree = "<group>";
-		};
-		34DF09812C2BAD79009C6144 /* Calorie MeterUITests */ = {
-			isa = PBXGroup;
-			children = (
-				34DF09822C2BAD79009C6144 /* Calorie_MeterUITests.swift */,
-				34DF09842C2BAD79009C6144 /* Calorie_MeterUITestsLaunchTests.swift */,
-			);
-			path = "Calorie MeterUITests";
-			sourceTree = "<group>";
-		};
 		34DF09912C2BB206009C6144 /* PrimaryButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -360,6 +378,8 @@
 			isa = PBXGroup;
 			children = (
 				34DF09952C2BB24E009C6144 /* PrimaryButtonUI.swift */,
+				34FD08772C37ADE2004F02DE /* FloatingNavButtonUI.swift */,
+				34D6F98B2C460E490005A047 /* PrimaryButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -429,6 +449,8 @@
 			dependencies = (
 			);
 			name = "Calorie Meter";
+			packageProductDependencies = (
+			);
 			productName = "Calorie Meter";
 			productReference = 34DF09642C2BAD78009C6144 /* Calorie Meter.app */;
 			productType = "com.apple.product-type.application";
@@ -501,6 +523,9 @@
 				Base,
 			);
 			mainGroup = 34DF095B2C2BAD78009C6144;
+			packageReferences = (
+				3492B0992C3EF31200E25C6B /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 34DF09652C2BAD78009C6144 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -546,7 +571,10 @@
 				34AFEC7E2C3115CD00DCCA65 /* TabPosition.swift in Sources */,
 				34934BF32C32FFE300F9817B /* ProfileView.swift in Sources */,
 				34A39A2D2C30613600C908AD /* Meals.swift in Sources */,
+				34FD08782C37ADE2004F02DE /* FloatingNavButtonUI.swift in Sources */,
+				34A653C32C3636F700D11B26 /* RegisterSuccessView.swift in Sources */,
 				34AFEC7C2C31135A00DCCA65 /* TabShape.swift in Sources */,
+				342A43C62C45812700766451 /* ChipView.swift in Sources */,
 				34C6C4D52C2DD42700CBCB13 /* GenderView.swift in Sources */,
 				34DBEF862C2C7CC3007747C4 /* ForgotPasswordViewUI.swift in Sources */,
 				34ADDC882C2E57DC006A9A0A /* ActiveView.swift in Sources */,
@@ -555,20 +583,24 @@
 				34AFEC7A2C3105F100DCCA65 /* Tab.swift in Sources */,
 				34A39A372C30711700C908AD /* ReportsView.swift in Sources */,
 				34DF096A2C2BAD78009C6144 /* ContentView.swift in Sources */,
+				34361A0A2C403A16009A0230 /* ReceipeViewModel.swift in Sources */,
 				34DF09682C2BAD78009C6144 /* Calorie_MeterApp.swift in Sources */,
 				34934BF52C33028900F9817B /* ProfileSettingsView.swift in Sources */,
 				343FE42E2C2F1FB600AC7A92 /* RegisterView.swift in Sources */,
 				343FE4282C2F0ECE00AC7A92 /* WeightView.swift in Sources */,
 				34DBEF802C2C718B007747C4 /* LoginViewUI.swift in Sources */,
 				348BEF152C325007006FD890 /* Receipe.swift in Sources */,
+				342A43C42C45802800766451 /* SettingsView.swift in Sources */,
 				34C6C4D32C2DD09C00CBCB13 /* CardView.swift in Sources */,
 				34E86B122C2FCCEB0009645D /* WelcomeView.swift in Sources */,
 				34A39A2A2C301F2500C908AD /* DiaryView.swift in Sources */,
 				34DF09962C2BB24E009C6144 /* PrimaryButtonUI.swift in Sources */,
 				343FE42A2C2F13DE00AC7A92 /* AgeView.swift in Sources */,
 				34D8A4792C2FD3240033A563 /* HomeView.swift in Sources */,
+				34623DEB2C40BA03003AFF4B /* ReceipeModel.swift in Sources */,
 				34ADDC8A2C2E602F006A9A0A /* HeightView.swift in Sources */,
 				343FE42C2C2F160E00AC7A92 /* RecommendView.swift in Sources */,
+				34D6F98C2C460E490005A047 /* PrimaryButton.swift in Sources */,
 				343CA16C2C31B4BE00716048 /* Weight.swift in Sources */,
 				348BEF122C3244EE006FD890 /* ReceipeDetailView.swift in Sources */,
 			);
@@ -578,7 +610,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34DF09792C2BAD79009C6144 /* Calorie_MeterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,8 +617,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34DF09852C2BAD79009C6144 /* Calorie_MeterUITestsLaunchTests.swift in Sources */,
-				34DF09832C2BAD79009C6144 /* Calorie_MeterUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -894,6 +923,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3492B0992C3EF31200E25C6B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 34DF095C2C2BAD78009C6144 /* Project object */;
 }

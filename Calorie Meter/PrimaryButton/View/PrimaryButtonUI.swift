@@ -9,24 +9,33 @@ import SwiftUI
 
 struct PrimaryButtonUI: View {
     @State var btnLable:String
-    var onPressed: (()->())?
     var body: some View {
-        Button(action: {
-            onPressed?()
-        }, label: {
+        //        Button(action: {
+        //            onPressed?()
+        //        }, label: {
+        //            Text(btnLable)
+        //                .frame(maxWidth: 312,maxHeight: 52)
+        //                .foregroundColor(.black)
+        //                .font(.title3)
+        //
+        //        })
+        //        .background(Color("Primary"))
+        //        .cornerRadius(12)
+        
+        ZStack {
+            Rectangle()
+                .cornerRadius(12)
+                .frame(width: 300,height: 50)
+                .foregroundColor(Color("Primary"))
             Text(btnLable)
                 .frame(maxWidth: 312,maxHeight: 52)
                 .foregroundColor(.black)
                 .font(.title3)
-                
-        })
-        .background(Color("Primary"))
-        .cornerRadius(12)
+        }
         
-
     }
 }
 
 #Preview {
-    PrimaryButtonUI(btnLable: "")
+    PrimaryButtonUI(btnLable: "Temp")
 }

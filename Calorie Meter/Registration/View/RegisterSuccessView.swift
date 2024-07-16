@@ -8,8 +8,23 @@
 import SwiftUI
 
 struct RegisterSuccessView: View {
+    @State private var isLogin = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+            VStack{
+                Spacer()
+                Text("You have successfully registered.")
+                Spacer()
+                
+                NavigationLink{
+                    GenderView()
+                } label:{
+                    PrimaryButtonUI( btnLable: "Go to Login")
+                }
+                
+            }
+           
+        }
     }
 }
 

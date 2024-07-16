@@ -46,29 +46,17 @@ struct GoalViewUI: View {
                     Spacer()
                     HStack {
                         Spacer()
-                        Button(action: {
-                            isNext.toggle()
-                        }, label: {
-                            Image(systemName: "chevron.right")
-                                .frame(width: 77, height: 70)
-                                .foregroundColor(Color.black)
-                                .padding(.vertical,2)
-                               
-                        })
-                        .background(Color("Primary"))
-                        .cornerRadius(38.5)
-                        .padding()
-                        .shadow(color: Color.black.opacity(0.3),
-                                radius: 3,
-                                x: 3,
-                                y: 3)
-                        .navigationDestination(isPresented: $isNext){
+                        NavigationLink{
                             GenderView()
+                        } label:{
+                            FloatingNavButtonUI()
                         }
+                      
                     }
                     
                 }
             }
+         
             .navigationBarBackButtonHidden(true)
 
         }

@@ -10,7 +10,8 @@ import SwiftUI
 
 struct GenderView: View {
     @State private var selectedId: String? = nil
-    @Environment(\.dismiss) private var dismiss
+    @State private var isActiveView:Bool = false
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     let gender:[String:String] = [
         "Male" : "male",
@@ -45,7 +46,7 @@ struct GenderView: View {
                     Spacer()
                     HStack {
                         Button(action: {
-                            dismiss()
+                            self.presentationMode.wrappedValue.dismiss()
                         }, label: {
                             Text("Back")
                                 .padding(.leading)
@@ -53,24 +54,17 @@ struct GenderView: View {
                                 .foregroundColor(Color("OnBackgroundVariant"))
                         })
                         Spacer()
-                        Button(action: {}, label: {
-                            Image(systemName: "chevron.right")
-                                .frame(width: 77, height: 70)
-                                .foregroundColor(Color.black)
-                                .padding(.vertical,2)
-                               
-                        })
-                        .background(Color("Primary"))
-                        .cornerRadius(38.5)
-                        .padding()
-                        .shadow(color: Color.black.opacity(0.3),
-                                radius: 3,
-                                x: 3,
-                                y: 3)
+                        NavigationLink{
+                            ActiveView()
+                        } label:{
+                            FloatingNavButtonUI()
+                        }
                     }
                 }
+              
             }
-//            .navigationBarBackButtonHidden(true)
+           
+            .navigationBarBackButtonHidden(true)
         }
     }
 }
