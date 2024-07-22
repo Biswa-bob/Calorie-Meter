@@ -16,14 +16,20 @@ struct RegisterSuccessView: View {
                 Text("You have successfully registered.")
                 Spacer()
                 
-                NavigationLink{
-                    GenderView()
-                } label:{
-                    PrimaryButtonUI( btnLable: "Go to Login")
-                }
+//                NavigationLink{
+//                   LoginViewUI()
+//                } label:{
+//                    PrimaryButtonUI( btnLable: "Go to Login")
+//                }
+                PrimaryButton(btnLable: "Login",onPressed: {
+                    isLogin.toggle()
+                })
                 
             }
-           
+            .navigationDestination(isPresented: $isLogin ){
+                LoginViewUI()
+            }
+            .navigationBarBackButtonHidden(true)
         }
     }
 }

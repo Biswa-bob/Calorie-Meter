@@ -17,14 +17,18 @@ struct ReceipesView: View {
         NavigationStack{
             ScrollView{
                 VStack(alignment: .center){
-                    HStack(spacing: 15){
-                        Image("demo")
-                        Text("Bob")
-                            .font(.title2)
-                            .bold()
-                            .foregroundColor(Color("OnBackground"))
-                        Spacer()
-                    }.padding(.leading,30)
+//                    NavigationLink{
+//                        ProfileView()
+//                    } label:{
+//                        HStack(spacing: 15){
+//                            Image("demo")
+//                            Text("Bob")
+//                                .font(.title2)
+//                                .bold()
+//                                .foregroundColor(Color("OnBackground"))
+//                            Spacer()
+//                        }.padding(.leading,30)
+//                    }
                     
                     HStack(spacing: 20){
                         ZStack{
@@ -86,7 +90,7 @@ struct ReceipesView: View {
                 .onAppear(
                     perform: {
                         Task.init{
-                            let result = await receipe.fetchReceipe(for: "chicken")
+                            let result = await receipe.fetchReceipe(for: "Paneer Butter masala",time: "100+")
                             recipes = result
                         }
                     }

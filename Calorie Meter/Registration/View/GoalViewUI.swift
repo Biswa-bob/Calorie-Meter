@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct GoalViewUI: View {
-    @State private var selectedId: String? = nil
+    @State private var selectedId: Goal? = nil
     @State private var isNext = false
-    let cards:[String:String] = [
+    @ObservedObject var viewModel: RegistrationViewModel
+    
+    let cards:[String:Goal] = [
         
-        "Lose Weight": "lose",
-        "Keep Weight": "keep",
-        "Gain Weight": "gain",
+        "Lose Weight": .lose,
+        "Keep Weight": .keep,
+        "Gain Weight": .gain,
     ]
     
     var body: some View {
@@ -37,6 +39,7 @@ struct GoalViewUI: View {
                         }, set: { newValue in
                             if newValue {
                                 selectedId = identifier
+                                viewModel.registrationData.goal = identifier
                             } else {
                                 selectedId = nil
                             }
@@ -47,7 +50,7 @@ struct GoalViewUI: View {
                     HStack {
                         Spacer()
                         NavigationLink{
-                            GenderView()
+                            GenderView(viewModel: viewModel)
                         } label:{
                             FloatingNavButtonUI()
                         }
@@ -66,5 +69,5 @@ struct GoalViewUI: View {
 
 
 #Preview {
-    GoalViewUI()
+    GoalViewUI(viewModel: RegistrationViewModel())
 }

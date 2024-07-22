@@ -12,8 +12,10 @@ struct RegisterView: View {
     @State private var email = ""
     @State private var password = ""
     @State private var isRegister = false
+    @ObservedObject var viewModel: RegistrationViewModel
+    
     var body: some View {
-        NavigationView{
+        NavigationStack{
                 VStack(spacing: 20){
                     Text("Register")
                         .font(.title2)
@@ -26,7 +28,7 @@ struct RegisterView: View {
                             HStack{
                                 Image(systemName: "person")
                                     .foregroundColor(Color("OnBackgroundVariant"))
-                                TextField("Enter Your name", text: $name)
+                                TextField("Enter Your name", text: $viewModel.registrationData.name)
                                     .foregroundColor(Color("OnBackgroundVariant"))
                                     .autocorrectionDisabled(true)
                                     .autocapitalization(.none)
@@ -41,7 +43,7 @@ struct RegisterView: View {
                             HStack{
                                 Image(systemName: "envelope")
                                     .foregroundColor(Color("OnBackgroundVariant"))
-                                TextField("Enter Your Email", text: $email)
+                                TextField("Enter Your Email", text: $viewModel.registrationData.email)
                                     .foregroundColor(Color("OnBackgroundVariant"))
                                     .autocorrectionDisabled(true)
                                     .autocapitalization(.none)
@@ -57,21 +59,28 @@ struct RegisterView: View {
                                 Image(systemName: "lock")
                                     .foregroundColor(Color("OnBackgroundVariant"))
                                 
-                                SecureField("Enter Password", text: $password)
+                                SecureField("Enter Password", text: $viewModel.registrationData.password)
                                     
                             }
                             .padding()
                         }
                     Spacer()
-                    PrimaryButtonUI(btnLable: "Register")
+                    PrimaryButton(btnLable: "Register",onPressed: {
+                        if(viewModel.registerUser()){
+                            isRegister.toggle()
+                        }
+                    })
+                    NavigationLink(destination: RegisterSuccessView(), isActive: $isRegister) { EmptyView() }
+
                 }
-            .navigationTitle("Register")
-            .navigationBarHidden(true)
+        
+            .navigationBarBackButtonHidden()
+       
             
         }
     }
 }
 
 #Preview {
-    RegisterView()
+    RegisterView(viewModel: RegistrationViewModel())
 }

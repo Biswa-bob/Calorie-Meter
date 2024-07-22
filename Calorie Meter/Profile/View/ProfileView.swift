@@ -9,13 +9,32 @@ import SwiftUI
 
 struct ProfileView: View {
     @State private var isDarkMode = true
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var body: some View {
         NavigationStack{
             VStack{
-                Text("Profile")
-                    .font(.title2)
+                HStack{
+                    Button(action: {
+                        self.presentationMode.wrappedValue.dismiss()
+                    }, label: {
+                        Image(systemName: "chevron.left")
+                          
+                    })
                     .foregroundColor(Color("OnBackground"))
-                    .bold()
+                    
+             
+                      Spacer()
+                        .frame(width: 130)
+                    Text("Profile")
+                        .font(.title2)
+                        .bold()
+                        .foregroundColor(Color("OnBackground"))
+                    Spacer()
+                       
+                }
+                .padding(.bottom,30)
+                .padding(.top,10)
+                .padding(.leading)
                 VStack(spacing: 20){
                     Image("demo")
                         .resizable()
@@ -136,6 +155,8 @@ struct ProfileView: View {
                 }.padding()
                 Spacer()
             }
+            .navigationBarHidden(true)
+            .navigationBarBackButtonHidden(true)
         }
     }
 }

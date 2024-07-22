@@ -10,8 +10,10 @@ import SwiftUI
 struct LoginViewUI: View {
     @State private var username = ""
     @State private var password = ""
+    @State private var isLogin = false
+    @StateObject private var loginVC = LoginViewModel()
     var body: some View {
-        NavigationView{
+        NavigationStack{
                 VStack(spacing: 20){
                     Text("Login")
                         .font(.title2)
@@ -46,15 +48,28 @@ struct LoginViewUI: View {
                             .padding()
                         }
                     Spacer()
-                    PrimaryButtonUI(btnLable: "Login")
+                       PrimaryButtonUI(btnLable: "Login")
+                        .onTapGesture {
+                            loginVC.loginUser(email: username, password: password){ isLoginSuccess in
+                                if(isLoginSuccess){
+                                    isLogin.toggle()
+                                }else{
+                                    return
+                                }
+                            }
+                        }
+                   
                     Button(action:{},label: {
                         Text("Forgot Password?")
                             .foregroundColor(Color("Primary"))
                     })
                 }
-            .navigationTitle("Login")
+                .navigationDestination(isPresented: $isLogin){
+                    HomeView()
+                }
             .navigationBarHidden(true)
-            
+            .navigationBarBackButtonHidden(true)
+          
         }
     }
 }

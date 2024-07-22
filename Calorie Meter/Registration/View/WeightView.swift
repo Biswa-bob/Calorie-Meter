@@ -12,6 +12,7 @@ struct WeightView: View {
     @State private var selectedWeight = "kg"
     @Environment(\.dismiss) private var dismiss
     @State private var isAgeView:Bool = false
+    @ObservedObject var viewModel: RegistrationViewModel
     let units = ["kg","lb"]
     var body: some View {
         NavigationStack{
@@ -29,12 +30,13 @@ struct WeightView: View {
                     Spacer()
                     HStack(alignment: .center){
                         VStack{
-                            TextField("", text: $weight)
+                            TextField("", text: $viewModel.registrationData.weight)
                                 .frame(width: 40)
                                 .onChange(of: weight) { newValue in
-                                     if newValue.count > 4 {
-                                       weight = String(newValue.prefix(4)) // Truncate to limit
-                                     }
+                                    if newValue.count > 4 {
+                                        weight = String(newValue.prefix(4)) // Truncate to limit
+                                        viewModel.registrationData.weight = weight
+                                    }
                                    }
                          
                             Rectangle()
@@ -43,7 +45,7 @@ struct WeightView: View {
                         }
                         
                         
-                        Picker("Enter Height",selection: $selectedWeight){
+                        Picker("Enter Height",selection: $viewModel.registrationData.weight_unit){
                             ForEach(units,id: \.self){
                                 Text("\($0)")
                                     .tag("\($0)")
@@ -68,21 +70,19 @@ struct WeightView: View {
                         })
                         Spacer()
                         NavigationLink{
-                            AgeView()
+                            AgeView(viewModel:viewModel)
                         } label:{
                             FloatingNavButtonUI()
                         }
                     }
                 }
             }
-            .navigationDestination(isPresented: $isAgeView){
-                AgeView()
-            }
+          
             .navigationBarBackButtonHidden(true)
         }
     }
 }
 
 #Preview {
-    WeightView()
+    WeightView(viewModel:  RegistrationViewModel())
 }

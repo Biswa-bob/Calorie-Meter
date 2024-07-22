@@ -15,16 +15,33 @@ struct HomeView: View {
         UITabBar.appearance().isHidden = true
     }
     var body: some View {
-        TabView(selection: $activeTab){
-            ReceipesView()
-                .tag(Tab.receipes)
-            DiaryView()
-                .tag(Tab.diary)
-            ReportsView()
-                .tag(Tab.reports)
-              
+        NavigationStack{
+            VStack{
+                NavigationLink{
+                    ProfileView()
+                } label:{
+                    HStack(spacing: 15){
+                        Image("demo")
+                        Text("Bob")
+                            .font(.title2)
+                            .bold()
+                            .foregroundColor(Color("OnBackground"))
+                        Spacer()
+                    }.padding(.leading,30)
+                }
+                TabView(selection: $activeTab){
+                    ReceipesView()
+                        .tag(Tab.receipes)
+                    DiaryView()
+                        .tag(Tab.diary)
+                    ReportsView()
+                        .tag(Tab.reports)
+                      
+                }
+                .navigationBarBackButtonHidden()
+                CustomTabBar()
+            }
         }
-        CustomTabBar()
     }
     @ViewBuilder
     func CustomTabBar(_ tint:Color = Color("Primary"),_ inactiveTint: Color = Color("Primary"))-> some View{

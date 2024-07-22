@@ -17,6 +17,7 @@ struct RecommendView: View {
     private let adaptiveColumns = [
         GridItem(.adaptive(minimum: 120))
     ]
+    @ObservedObject var viewModel: RegistrationViewModel
     
     var body: some View {
            NavigationStack {
@@ -70,7 +71,7 @@ struct RecommendView: View {
                                     
                                 })
                             } }
-                        NavigationLink{ RegisterView()} label: {
+                        NavigationLink{ RegisterView(viewModel:viewModel)} label: {
                             RoundedRectangle(cornerRadius: 12)
                                 .fill(.clear)
                                 .stroke(Color("OnBackgroundVariant"), lineWidth: 1)
@@ -98,5 +99,5 @@ struct RecommendView: View {
 
 
 #Preview {
-    RecommendView()
+    RecommendView(viewModel: RegistrationViewModel())
 }

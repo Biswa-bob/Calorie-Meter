@@ -11,8 +11,8 @@ struct ContentView: View {
   
     
     var body: some View {
-        ReceipesView()
-//        WelcomeView()
+//        ReceipesView()
+        WelcomeView()
 //       GoalViewUI()
 //        ProfileSettingsView()
     }

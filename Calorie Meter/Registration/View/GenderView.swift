@@ -9,13 +9,13 @@ import SwiftUI
 
 
 struct GenderView: View {
-    @State private var selectedId: String? = nil
+    @State private var selectedId: Gender? = nil
     @State private var isActiveView:Bool = false
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    
-    let gender:[String:String] = [
-        "Male" : "male",
-        "Female" : "female"
+    @ObservedObject var viewModel: RegistrationViewModel
+    let gender:[String:Gender] = [
+        "Male" : .male,
+        "Female" : .female
     ]
     var body: some View {
         NavigationStack{
@@ -37,6 +37,7 @@ struct GenderView: View {
                         }, set: { newValue in
                             if newValue {
                                 selectedId = identifier
+                                viewModel.registrationData.gender = identifier
                             } else {
                                 selectedId = nil
                             }
@@ -55,10 +56,12 @@ struct GenderView: View {
                         })
                         Spacer()
                         NavigationLink{
-                            ActiveView()
+                            ActiveView(viewModel: viewModel)
                         } label:{
                             FloatingNavButtonUI()
+                            
                         }
+                       
                     }
                 }
               
@@ -70,5 +73,5 @@ struct GenderView: View {
 }
 
 #Preview {
-    GenderView()
+    GenderView(viewModel: RegistrationViewModel())
 }

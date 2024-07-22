@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AgeView: View {
     @State private var age:String = "5"
+    @ObservedObject var viewModel: RegistrationViewModel
     var body: some View {
         NavigationView{
             ZStack{
@@ -25,11 +26,12 @@ struct AgeView: View {
                     Spacer()
                     HStack(alignment: .center){
                         VStack{
-                            TextField("", text: $age)
+                            TextField("", text: $viewModel.registrationData.age)
                                 .frame(width: 40)
                                 .onChange(of: age) { newValue in
                                      if newValue.count > 2 {
                                        age = String(newValue.prefix(2)) // Truncate to limit
+                                         viewModel.registrationData.age = age
                                      }
                                    }
                          
@@ -52,7 +54,7 @@ struct AgeView: View {
                         })
                         Spacer()
                         NavigationLink{
-                            RecommendView()
+                            RecommendView(viewModel:viewModel)
                         } label:{
                             FloatingNavButtonUI()
                         }
@@ -64,5 +66,5 @@ struct AgeView: View {
 }
 
 #Preview {
-    AgeView()
+    AgeView(viewModel: RegistrationViewModel())
 }

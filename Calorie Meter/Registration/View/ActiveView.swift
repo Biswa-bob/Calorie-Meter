@@ -8,17 +8,19 @@
 import SwiftUI
 
 struct ActiveView: View {
-    @State private var selectedId: String? = nil
+    @State private var selectedId: LifeStyle? = nil
     @State private var isHeightView:Bool = false
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    let activity:[String:String] = [
-        "Sedentery":"sedentery",
-        "Low Active": "low",
-        "Active" : "active",
-        "Very Active" : "very_active",
+    @ObservedObject var viewModel: RegistrationViewModel
+    
+    let activity:[String:LifeStyle] = [
+        "Sedentery": .sedentery,
+        "Low Active": .low,
+        "Active" : .active,
+        "Very Active" : .veryActive,
     ]
+    
     var body: some View {
-      
         NavigationStack{
             ZStack{
                 VStack{
@@ -40,6 +42,7 @@ struct ActiveView: View {
                         }, set: { newValue in
                             if newValue {
                                 selectedId = identifier
+                                viewModel.registrationData.lifeStyle = identifier
                             } else {
                                 selectedId = nil
                             }
@@ -58,7 +61,7 @@ struct ActiveView: View {
                         })
                         Spacer()
                         NavigationLink{
-                            HeightView()
+                            HeightView(viewModel: viewModel)
                         } label:{
                             FloatingNavButtonUI()
                         }
@@ -72,5 +75,5 @@ struct ActiveView: View {
 }
 
 #Preview {
-    ActiveView()
+    ActiveView(viewModel: RegistrationViewModel())
 }

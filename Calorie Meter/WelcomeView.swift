@@ -11,6 +11,8 @@ struct WelcomeView: View {
     @State private var showingCredits = false
     @State private var isLogin = false
     @State private var isStart = false
+    @StateObject var viewModel = RegistrationViewModel()
+    
     var body: some View {
         NavigationStack {
             VStack{
@@ -27,13 +29,10 @@ struct WelcomeView: View {
                 Spacer()
                 VStack(spacing: 25) {
                     NavigationLink{
-                        GoalViewUI()
+                        GoalViewUI(viewModel: viewModel)
                     }label:{
                         PrimaryButtonUI(btnLable: "Start")
                     }
-//                        .navigationDestination(isPresented: $isStart){
-//                            GoalViewUI()
-//                        }
                     HStack{
                         Text("Already have an account?")
                         Button(action:{
@@ -43,61 +42,68 @@ struct WelcomeView: View {
                                 .foregroundColor(Color("Primary"))
                         })
                         .sheet(isPresented: $showingCredits) {
-                            VStack(spacing: 20){
-                                RoundedRectangle(cornerRadius: 12)
-                                    .fill(.clear)
-                                    .stroke(Color("OnBackgroundVariant"), lineWidth: 1)
-                                    .frame(maxWidth: 312,maxHeight: 52)
-                                    .overlay{ HStack(spacing: 10){
-                                        Image("google")
-                                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                                            Text("Sign In With Google")
-                                                .foregroundColor(.white)
-                                                .font(.subheadline)
-                                            
-                                        })
-                                    } }
-                                
-                                RoundedRectangle(cornerRadius: 12)
-                                    .fill(.clear)
-                                    .stroke(Color("OnBackgroundVariant"), lineWidth: 1)
-                                    .frame(maxWidth: 312,maxHeight: 52)
-                                    .overlay{
-                                        HStack(spacing: 10){
-                                            Image(systemName: "envelope")
-                                            Button(action: {
-                                                isLogin = true
-                                                showingCredits = false
-                                                print("sdfjsdkj",isLogin)
-                                            }, label: {
-                                                Text("Sign In With Email")
-                                                    .foregroundColor(.white)
-                                                    .font(.subheadline)
-                                                
-                                            }
-                                            )
-                                            
-                                            
-                                        }
-                                    }
-                                  
-                                
-                            }
-                            .presentationDetents([.height(300)])
+                            SignInSheetView(isLogin: $isLogin, showingCredits: $showingCredits)
+                            
                         }
-                        
                     }
                 }
                 
             }
-            
+            .navigationDestination(isPresented: $isLogin){
+                LoginViewUI()
+            }
         }
-        .navigationDestination(isPresented: $isLogin){
-            LoginViewUI()
-        }
+       
     }
 }
 
 #Preview {
     WelcomeView()
+}
+
+struct SignInSheetView: View {
+    @Binding var isLogin:Bool
+    @Binding var showingCredits: Bool
+    var body: some View {
+       NavigationStack {
+            VStack(spacing: 20){
+                RoundedRectangle(cornerRadius: 12)
+                    .fill(.clear)
+                    .stroke(Color("OnBackgroundVariant"), lineWidth: 1)
+                    .frame(maxWidth: 312,maxHeight: 52)
+                    .overlay{ HStack(spacing: 10){
+                        Image("google")
+                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                            Text("Sign In With Google")
+                                .foregroundColor(.white)
+                                .font(.subheadline)
+                            
+                        })
+                    } }
+                
+                RoundedRectangle(cornerRadius: 12)
+                    .fill(.clear)
+                    .stroke(Color("OnBackgroundVariant"), lineWidth: 1)
+                    .frame(maxWidth: 312,maxHeight: 52)
+                    .overlay{
+                        HStack(spacing: 10){
+                            Image(systemName: "envelope")
+                            Button(action: {
+                                showingCredits = false
+                                isLogin = true
+                             
+                                print("login \(isLogin)")
+                            }, label: {
+                                Text("Sign In With Email")
+                                    .foregroundColor(.white)
+                                    .font(.subheadline)
+                                
+                            }
+                            )
+                        }
+                    }
+            }
+        }
+        .presentationDetents([.height(300)])
+    }
 }

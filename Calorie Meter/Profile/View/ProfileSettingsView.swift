@@ -14,13 +14,30 @@ struct ProfileSettingsView: View {
     @State private var isWeight = false
     @State private var isSex = false
     @State private var isLifeStyle = false
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     var body: some View {
         VStack{
-            Text("Me")
-                .font(.title2)
-                .bold()
+            HStack{
+                Button(action: {
+                    self.presentationMode.wrappedValue.dismiss()
+                }, label: {
+                    Image(systemName: "chevron.left")
+                      
+                })
                 .foregroundColor(Color("OnBackground"))
-                .padding(.bottom,30)
+                
+         
+                  Spacer()
+                Text("Me")
+                    .font(.title2)
+                    .bold()
+                    .foregroundColor(Color("OnBackground"))
+                Spacer()
+                   
+            }
+            .padding(.bottom,30)
+            .padding(.leading)
             VStack{
                 SettingsCard(name: "Goal", value: "Gain Weight",isSheetOpen: $isWeightActivity)
                 SettingsCard(name: "Age", value: "17 years",isSheetOpen: $isAge)
@@ -30,23 +47,12 @@ struct ProfileSettingsView: View {
                 SettingsCard(name: "Lifestyle", value: "Active",isSheetOpen: $isLifeStyle)
             }
             Spacer()
-            PrimaryButtonUI(btnLable: "Done")
+            PrimaryButtonUI(btnLable: "Save")
+                .navigationBarHidden(true)
+                .navigationBarBackButtonHidden(true)
         }
     }
     
-    @ViewBuilder
-    func ageField(_ ageField:Int)-> some View{
-        VStack{
-            Text("Age")
-                .font(.title2)
-                .bold()
-            HStack{
-//                TextField("", text: $age)
-                Text("years")
-                    .font(.subheadline)
-            }
-        }
-    }
 }
 
 #Preview {
@@ -74,7 +80,13 @@ struct SettingsCard: View {
                     VStack{
                         switch name{
                             case "Goal":
-                                Text("hello \(name)")
+                                GoalSettingsView()
+                            case "Age":
+                                AgeViewSettings()
+                            case "Height":
+                                HeightViewSettings()
+                            case "Weight":
+                                WeightViewSettings()
                             default:
                                 Text("Nothing to show")
                         }

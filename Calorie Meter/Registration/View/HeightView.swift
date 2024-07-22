@@ -14,6 +14,8 @@ struct HeightView: View {
     @State private var selectedCenti = 1
     @Environment(\.dismiss) private var dismiss
     @State private var isWeightView:Bool = false
+    @ObservedObject var viewModel: RegistrationViewModel
+    
     var body: some View {
         NavigationStack{
             ZStack{
@@ -66,21 +68,19 @@ struct HeightView: View {
                         })
                         Spacer()
                         NavigationLink{
-                            WeightView()
+                            WeightView(viewModel: viewModel)
                         } label:{
                             FloatingNavButtonUI()
                         }
                     }
                 }
             }
-            .navigationDestination(isPresented: $isWeightView){
-                WeightView()
-            }
+         
             .navigationBarBackButtonHidden(true)
         }
     }
 }
 
 #Preview {
-    HeightView()
+    HeightView(viewModel: RegistrationViewModel())
 }

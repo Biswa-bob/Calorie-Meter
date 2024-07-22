@@ -13,7 +13,7 @@ class ReceipeViewModel:ObservableObject{
     static let apiKey = "97fab8c969adb738f07580c787f2d9c1"
     static let apiId = "7b93b135"
     static let type = "public"
-    static let time = "100%2B"
+//    static let time = "100+"
     
     //    let url = URL(string: "https://api.edamam.com/api/recipes/v2?type=public&q=salad&app_id=7b93b135&app_key=97fab8c969adb738f07580c787f2d9c1&time=100%2B")
     
@@ -21,18 +21,20 @@ class ReceipeViewModel:ObservableObject{
         case failedToGetReceipe
     }
     
-    func fetchReceipe(for query:String) async -> ReceipeModel? {
+    func fetchReceipe(for query:String,time:String?="0") async -> ReceipeModel? {
         guard var urlComponents = URLComponents(string: baseUrl) else {
             return nil
         }
         
         urlComponents.queryItems = [
             URLQueryItem(name: "type", value: ReceipeViewModel.type),
-            URLQueryItem(name: "q", value: query.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)),
+            URLQueryItem(name: "q", value: query),
             URLQueryItem(name: "app_key", value: ReceipeViewModel.apiKey),
             URLQueryItem(name: "app_id", value: ReceipeViewModel.apiId),
+//            URLQueryItem(name: "time", value: time?.replacingOccurrences(of: "+", with: "%2B"))
+            
         ]
-        
+        print("DEBUG: \(urlComponents)")
         guard let url = urlComponents.url else {
             return nil
         }
